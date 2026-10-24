@@ -95,7 +95,7 @@ The schema diagram and module responsibilities are in [docs/architecture.md](doc
 
 The dataset is not stored in this repository. `retailpulse ingest` downloads it from UCI and records the URL, licence, retrieval time and checksum in `data/raw/source_metadata.json`.
 
-**Synthetic fallback.** If the download fails, or with `--source synthetic`, the pipeline uses a small seeded dataset in the same layout. It exists for CI and offline development. It is recorded as synthetic in the metadata and flagged with a banner in the dashboard. Every figure in this README comes from the real UCI data.
+**Synthetic fallback.** If the download fails, or with `--source synthetic`, the pipeline uses a small seeded dataset in the same layout. It exists for tests and offline development. It is recorded as synthetic in the metadata and flagged with a banner in the dashboard. Every figure in this README comes from the real UCI data.
 
 ## Getting started
 
